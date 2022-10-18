@@ -1,7 +1,7 @@
 #Copyright 2022 Alberto Zanella
 import globalPluginHandler
 import inputCore
-import appModuleHandler
+import addonHandler
 import ui
 import tones
 from scriptHandler import script
