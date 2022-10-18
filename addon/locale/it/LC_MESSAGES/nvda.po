@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 'SpeaKey' '1.0'\n"
+"Report-Msgid-Bugs-To: 'nvda-translations@groups.io'\n"
+"POT-Creation-Date: 2022-10-18 12:06+0200\n"
+"PO-Revision-Date: 2022-10-18 12:09+0100\n"
+"Last-Translator: Alberto Zanella <lapostadi[firstname]@gmail.com>\n"
+"Language-Team: \n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Italian\n"
+"X-Poedit-Country: ITALY\n"
+
+#: addon\globalPlugins\speaKey.py:24
+#: addon\globalPlugins\speaKey.py:42
+msgid "SpeaKey mode on"
+msgstr "Lettura tasti ripetuti attivata"
+
+#: addon\globalPlugins\speaKey.py:35
+msgid "Toggle SpeaKey Mode on and off"
+msgstr "Attiva/Disattiva lettura tasti ripetuti"
+
+#: addon\globalPlugins\speaKey.py:39
+msgid "SpeaKey mode off"
+msgstr "Lettura tasti ripetuti disattivata"
+
+#. Add-on summary, usually the user visible name of the addon.
+#. Translators: Summary for this add-on
+#. to be shown on installation and add-on information found in Add-ons Manager.
+#: buildVars.py:23
+msgid "SpeaKey"
+msgstr "SpeaKey"
+
+#. Add-on description
+#. Translators: Long description to be shown for this add-on on add-on information from add-ons manager
+#: buildVars.py:26
+msgid "Speaks repeated keys"
+msgstr "Lettura tasti ripetuti"
+
