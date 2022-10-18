@@ -32,7 +32,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         tones.beep(400,30)
         return True
     
-    @script(gesture="kb:control+escape", description= _("Toggle SpeaKey Mode on and off"), category= "Cattura tasti", bypassInputHelp=True)
+    @script(gesture="kb:control+escape", description= _("Toggle SpeaKey Mode on and off"), category= "SpeaKey", bypassInputHelp=True)
     def script_keyReadToggle(self, gesture):
         if(self.isActive) :
             inputCore.manager._captureFunc = None
