@@ -18,7 +18,13 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         self.isActive = False
     
     def _keyReadCaptor(self, gesture):
+        if('control+esc' in gesture.identifiers[0].lower()) :
+            return
         if(':nvda+1' in gesture.identifiers[0].lower()) :
+            self.isActive = False
+            tones.beep(400,300)
+            ui.message(_("SpeaKey mode on"))
+        if('control+1' in gesture.identifiers[0].lower()) :
             self.isActive = False
             tones.beep(400,300)
             ui.message(_("SpeaKey mode on"))
@@ -32,7 +38,7 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
         tones.beep(400,30)
         return True
     
-    @script(gesture="kb:control+escape", description= _("Toggle SpeaKey Mode on and off"), category= "SpeaKey", bypassInputHelp=True)
+    @script(gesture="kb:control+escape", description= _("Toggle SpeaKey Mode on and off"), category= "SpeaKey")
     def script_keyReadToggle(self, gesture):
         if(self.isActive) :
             inputCore.manager._captureFunc = None
