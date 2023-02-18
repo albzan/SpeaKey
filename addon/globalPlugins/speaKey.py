@@ -24,10 +24,6 @@ class GlobalPlugin(globalPluginHandler.GlobalPlugin):
             self.isActive = False
             tones.beep(400,300)
             ui.message(_("SpeaKey mode on"))
-        if('control+1' in gesture.identifiers[0].lower()) :
-            self.isActive = False
-            tones.beep(400,300)
-            ui.message(_("SpeaKey mode on"))
         if(gesture.identifiers[0] not in self.prevGesture) :
             self.prevGesture.append(gesture.identifiers[0])
             if(gesture.isCharacter) :
